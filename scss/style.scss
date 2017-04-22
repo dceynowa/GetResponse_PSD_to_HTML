@@ -1,0 +1,203 @@
+@import 'vendors/bootstrap/_bootstrap.scss';
+@import 'vendors/font-awesome/font-awesome';
+@import url('https://www.fontify.me/wf/d933cafd43f2809f1bb845a6ba9f3166');
+
+$main-font: 'font73655', sans-serif; /*font HelveticaNeueLStd Roman*/
+$menu-font-color: #FF801A;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1024px;
+  background: #FAFAFA;
+  font-family: $main-font, sans-serif;
+}
+
+/*header*/
+header {
+  padding: 0px auto 20px 100px;
+  height: 81px;
+  width: 100%;
+  background: #fff url("../img/line_under_header.png") center no-repeat;
+  position: relative;
+}
+
+header img {
+  margin-left: 100px;
+  float: left;
+}
+
+header ul {
+  float: left;
+}
+
+#menu li {
+  float: left;
+  list-style-type: none;
+  text-transform: uppercase;
+  margin: 30px;
+  margin-left: 0;
+  padding: 0px;
+  max-width: 100px;
+  font-weight: bold;
+  color: $menu-font-color;
+}
+
+#menu li.current_page {
+  margin-left: 25px;
+  position: relative;
+}
+
+#menu li.current_page div img {
+  position: absolute;
+  right: 30px;
+  margin-top: 5px;
+}
+
+#user {
+  display: inline-block;
+  position: relative;
+  left: 37%;
+}
+
+#user span {
+  margin: 30px 5px 30px 0;
+  float: left;
+}
+
+#chech_grey {
+  margin: 38px 5px 38px 0;
+  float: left;
+}
+
+#photo {
+  margin: 23px 8px 23px 0;
+  float: left;
+}
+
+/*section intro*/
+#intro {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/*dic week_progress*/
+
+#week_progress {
+  padding: 0;
+}
+
+#week_progress span {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+#twelve_circles {
+  width: 220px;
+  position: relative;
+  left: 15px;
+}
+
+.green_circle {
+  background: url("../img/green_line.png") no-repeat;
+  background-position: 0% 30%;
+}
+
+.grey_circle {
+  background: url("../img/grey_line.png") no-repeat;
+  background-position: 0% 30%;
+}
+
+.grey_circle:last-child {
+  background: none;
+}
+
+#grey_circle_week7 {
+  position: relative;
+}
+
+#white_circle_week7 {
+  position: absolute;
+  z-index: 1;
+  left: 2px;
+  top: 23%;
+}
+
+#twelve_circles .green_circle, #twelve_circles .grey_circle {
+  padding: 0px;
+}
+
+/*div weeek*/
+#week div {
+  height: 44px;
+  max-height: 44px;
+}
+
+#intro div.container {
+  width: 1024px;
+  margin-right: 0px;
+}
+
+.border_arrow {
+  width: 26px;
+  padding-right: 20px;
+  margin-top: 20px;
+  background: url("../img/border_arrow.png") no-repeat center;
+}
+
+.border_arrow:first-child {
+  margin-left: 30px;
+}
+
+#week h1 {
+  color: $menu-font-color;
+}
+
+/*div protein_options*/
+div #protein_options {
+
+  font-size: 10px;
+  text-align: right;
+  height: 60px;
+  padding-right: 0px;
+}
+
+#protein_images img {
+  padding-left: 15px;
+}
+
+#protein_options div:first-child {
+  height: 20px;
+  position: relative;
+  right: 15%;
+}
+
+#protein_options span {
+  text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.cross-line {
+  background: url("../img/cross_line.png") center no-repeat;
+  background-position: 100% 20%;
+  background-size: 100% 150%;
+}
+
+
+
+
+#calendar {
+
+}
+
+
+#offers {
+  display: none;
+}
