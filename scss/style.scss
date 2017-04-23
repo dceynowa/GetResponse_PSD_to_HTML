@@ -214,6 +214,7 @@ div #protein_options {
   height: 50px;
   line-height: 50px;
 }
+
 div.wave_background.which_day {
   height: 70px;
 }
@@ -221,11 +222,10 @@ div.wave_background.which_day {
 .which_day h2 {
   text-align: center;
 }
+
 .hour {
   font-weight: bold;
 }
-
-
 
 .wave_background {
   background: #bcc8ff url("../img/background_wave.png") no-repeat center center fixed;
@@ -297,14 +297,14 @@ div.wave_background.big_field_in_calendar {
   box-sizing: border-box;
   border: 2px solid #ff801a;
 }
+
 .which_day h2 {
   color: $name_of_day_color;
 }
+
 .current_day h2 {
   color: $menu-font-color;
 }
-
-
 
 #day65 .which_day {
   height: 48px;
@@ -324,6 +324,7 @@ img.check_in_round {
   right: 11px;
   top: 3px;
 }
+
 #offers {
   display: none;
 }
