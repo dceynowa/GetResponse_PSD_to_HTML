@@ -4,6 +4,7 @@
 
 $main-font: 'font73655', sans-serif; /*font HelveticaNeueLStd Roman*/
 $menu-font-color: #FF801A;
+$name_of_day_color: #b3c304;
 * {
   margin: 0;
   padding: 0;
@@ -190,14 +191,139 @@ div #protein_options {
   background-size: 100% 150%;
 }
 
-
-
-
+/*section calendar*/
 #calendar {
+  margin-top: 30px;
+}
 
+.whole_week {
+  max-width: 1024px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.calendar {
+  width: 12.5%;
+  align-self: flex-start;
+  background: #fff;
+}
+
+.which_day {
+  height: 50px;
+  line-height: 50px;
+}
+div.wave_background.which_day {
+  height: 70px;
+}
+
+.which_day h2 {
+  text-align: center;
+}
+.hour {
+  font-weight: bold;
 }
 
 
+
+.wave_background {
+  background: #bcc8ff url("../img/background_wave.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.big_field_in_calendar {
+  height: 100px;
+  padding: 5px;
+  padding-bottom: 0px;
+  position: relative;
+}
+
+div.wave_background.big_field_in_calendar {
+  line-height: 100px;
+}
+
+.small_field_id_calendar {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.border_in_calendar {
+  height: 20px;
+}
+
+.border_in_calendar img {
+  width: 100%;
+  max-width: 128px;
+}
+
+#from_6am_to_6pm_day70 {
+  height: 560px;
+}
+
+#from_6am_to_6pm_day70 img {
+  display: block;
+  position: relative;
+  top: 390px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#text_rotate {
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+#from_6am_to_6pm_day70 h1 {
+  text-transform: uppercase;
+  white-space: nowrap;
+  position: relative;
+  right: 290px;
+}
+
+#print {
+  height: 100px;
+  line-height: 100px;
+}
+
+#day65 {
+  box-sizing: border-box;
+  border: 2px solid #ff801a;
+}
+.which_day h2 {
+  color: $name_of_day_color;
+}
+.current_day h2 {
+  color: $menu-font-color;
+}
+
+
+
+#day65 .which_day {
+  height: 48px;
+}
+
+#day65 .small_field_id_calendar:last-child {
+  height: 38px;
+}
+
+#day66, #day67, #day68, #day69 {
+  box-sizing: border-box;
+  border-right: 2px solid #dbdbdb;
+}
+
+img.check_in_round {
+  position: absolute;
+  right: 11px;
+  top: 3px;
+}
 #offers {
   display: none;
 }
