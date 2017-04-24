@@ -5,6 +5,7 @@
 $main-font: 'font73655', sans-serif; /*font HelveticaNeueLStd Roman*/
 $menu-font-color: #FF801A;
 $name_of_day_color: #b3c304;
+$main-font-color: #828282;
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +18,7 @@ body {
   max-width: 1024px;
   background: #FAFAFA;
   font-family: $main-font, sans-serif;
+  color: $main-font-color;
 }
 
 /*header*/
@@ -107,12 +109,12 @@ header ul {
 
 .green_circle {
   background: url("../img/green_line.png") no-repeat;
-  background-position: 0% 30%;
+  background-position: 0px 11px;
 }
 
 .grey_circle {
   background: url("../img/grey_line.png") no-repeat;
-  background-position: 0% 30%;
+  background-position: 0px 11px;
 }
 
 .grey_circle:last-child {
@@ -127,7 +129,7 @@ header ul {
   position: absolute;
   z-index: 1;
   left: 2px;
-  top: 23%;
+  top: 9px;
 }
 
 #twelve_circles .green_circle, #twelve_circles .grey_circle {
@@ -199,7 +201,11 @@ div #protein_options {
 .whole_week {
   max-width: 1024px;
   width: 100%;
-  display: flex;
+  display: -webkit-box;  
+  display: -moz-box;        
+  display: -ms-flexbox;      
+  display: -webkit-flex;
+  display: flex; ex;
   flex-direction: row;
   justify-content: space-around;
 }
@@ -306,6 +312,14 @@ div.wave_background.big_field_in_calendar {
   color: $menu-font-color;
 }
 
+.current_day {
+  color: black;
+}
+
+.current_day .small_field_id_calendar {
+  color: $main-font-color;
+}
+
 #day65 .which_day {
   height: 48px;
 }
@@ -325,6 +339,50 @@ img.check_in_round {
   top: 3px;
 }
 
-#offers {
-  display: none;
+/*section offer*/
+
+#advertisment {
+  display: -webkit-box;  
+  display: -moz-box;        
+  display: -ms-flexbox;      
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 50px;
+  align-items: center;
+}
+
+#advertisment h2 {
+  margin-top: 0px;
+}
+
+.offert_line {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.button {
+  background: url("../img/button_border.png") no-repeat center;
+  height: 35px;
+  line-height: 35px;
+  display: inline-block;
+  background-size: 100% 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.button img{
+  vertical-align: sub;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+a:link, a:hover {
+  color: $main-font-color;
+  text-decoration: none;
+  font-weight: 600;
 }
