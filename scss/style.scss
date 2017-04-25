@@ -194,6 +194,25 @@ div #protein_options {
 }
 
 /*section calendar*/
+#choose_day {
+  display: none;
+}
+
+#choose_day {
+  display: none
+}
+
+#menu-icon {
+  display: none;
+  width: 48px;
+  height: 48px;
+  background: url("../img/nav.png") center;
+}
+
+a:hover#menu-icon {
+  border-radius: 4px 0 4px 4px;
+}
+
 #calendar {
   margin-top: 30px;
 }
@@ -201,19 +220,22 @@ div #protein_options {
 .whole_week {
   max-width: 1024px;
   width: 100%;
-  display: -webkit-box;  
-  display: -moz-box;        
-  display: -ms-flexbox;      
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-  display: flex; ex;
+  display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 .calendar {
   width: 12.5%;
-  align-self: flex-start;
   background: #fff;
+}
+
+.meal_on_mobile {
+  display: none;
 }
 
 .which_day {
@@ -342,9 +364,9 @@ img.check_in_round {
 /*section offer*/
 
 #advertisment {
-  display: -webkit-box;  
-  display: -moz-box;        
-  display: -ms-flexbox;      
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -374,7 +396,7 @@ img.check_in_round {
   position: relative;
 }
 
-.button img{
+.button img {
   vertical-align: sub;
   padding-left: 5px;
   padding-right: 5px;
@@ -385,4 +407,143 @@ a:link, a:hover {
   color: $main-font-color;
   text-decoration: none;
   font-weight: 600;
+}
+
+@media(max-width: 767px) {
+  body {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    background: #fff;
+  }
+  #line_next_to_menu {
+    display: none;
+  }
+  #menu {
+    display: flex;
+    flex-direction: column;
+  }
+  #menu li {
+    margin-bottom: 15px !important;
+  }
+  .current_page {
+    margin-left: 0 !important;
+  }
+
+  #user {
+    clear: both;
+    position: static;
+  }
+
+  #week {
+    width: 100%;
+    margin-top: 97px;
+  }
+  .container {
+    max-width: 360px;
+  }
+  #week div.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .border_arrow:first-child {
+    margin-left: 0px;
+  }
+  #choose_day {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  #menu-icon {
+    display: inline-block;
+  }
+  #choose_day ul,
+  #choose_day:active ul {
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    border: 3px solid $menu-font-color;
+    border-radius: 20px 20px 20px 20px;
+    width: 100%;
+    background: #FAFAFA;
+
+  }
+  #choose_day:hover ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  #choose_day li {
+    width: 50%;
+    text-align: center;
+    list-style-type: none;
+    padding: 10px 0;
+  }
+  #choose_day a, #choose_day a:hover {
+    color: $name_of_day_color;
+  }
+  #choose_day .current_day, #choose_day .current_day:hover {
+    color: $menu-font-color;
+  }
+  #week_progress, #protein_options, #hours, .new_line, .border_in_calendar.wave_background {
+    display: none;
+  }
+
+  .calendar {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .meal_on_mobile {
+    display: inline;
+  }
+  .whole_week {
+    flex-direction: column;
+  }
+  .border_in_calendar, .border_in_calendar img {
+    width: 100%;
+    max-width: none;
+  }
+  .big_field_in_calendar, .small_field_id_calendar {
+    height: auto;
+  }
+  .small_field_id_calendar {
+    background: #dcdcdc;
+    text-align: left;
+  }
+  .diet {
+    margin-top: 15px;
+  }
+  .shake {
+    height: 40px;
+  }
+  .shake:hover {
+    height: 100%;
+  }
+  #day64, #day66, #day67, #day68, #day69, #day70 {
+    box-sizing: border-box;
+    border-left: 2px solid #dbdbdb;
+    border-right: 2px solid #dbdbdb;
+  }
+  #day64, #day67, #day68, #day69, #day70 {
+    border-top: 2px solid #dbdbdb;
+    }
+  #day70 {
+    border-bottom: 2px solid #dbdbdb;
+  }
+  #advertisment {
+    display: none;
+  }
 }
