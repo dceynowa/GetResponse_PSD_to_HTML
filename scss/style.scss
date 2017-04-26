@@ -6,6 +6,64 @@ $main-font: 'font73655', sans-serif; /*font HelveticaNeueLStd Roman*/
 $menu-font-color: #FF801A;
 $name_of_day_color: #b3c304;
 $main-font-color: #828282;
+
+@keyframes happy_animation {
+  0% {
+    background-color: #ffa625;
+    left: 0%;
+    top: 0%;
+    transform: scale(1) rotate(0deg);
+  }
+  12.5% {
+    background-color: #ccff41;
+    left: 40%;
+    top: 25%;
+    transform: scale(1.3) rotate(180deg);
+  }
+  25% {
+    background-color: #64ff3d;
+    left: 35%;
+    top: 35%;
+    transform: scale(1.6) rotate(360deg);
+  }
+  37.5% {
+    background-color: #0e8079;
+    left: 25%;
+    top: 40%;
+    transform: scale(1.9) rotate(180deg);
+  }
+  50% {
+    background-color: #ffff00;
+    left: 0%;
+    top: 0%;
+    transform: scale(2.2) rotate(0deg);
+  }
+  62.5% {
+    background-color: #ccff41;
+    left: -40%;
+    top: 25%;
+    transform: scale(1.9) rotate(180deg);
+  }
+  75% {
+    background-color: #64ff3d;
+    left: -35%;
+    top: 35%;
+    transform: scale(1.6) rotate(360deg);
+  }
+  87.5% {
+    background-color: #0e8079;
+    left: -25%;
+    top: 40%;
+    transform: scale(1.3) rotate(180deg);
+  }
+  100% {
+    background-color: #ffff00;
+    left: 0%;
+    top: 0%;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -256,7 +314,7 @@ div.wave_background.which_day {
 }
 
 .wave_background {
-  background: #bcc8ff url("../img/background_wave.png") no-repeat center center fixed;
+  background: #e3e3e3 url("../img/background_wave.png") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -409,12 +467,14 @@ a:link, a:hover {
   font-weight: 600;
 }
 
+/*media queries*/
 @media(max-width: 767px) {
   body {
     width: 100%;
     max-width: 360px;
   }
 
+  /*header*/
   header .container {
     display: flex;
     flex-direction: row;
@@ -436,12 +496,12 @@ a:link, a:hover {
   .current_page {
     margin-left: 0 !important;
   }
-
   #user {
     clear: both;
     position: static;
   }
 
+  /*section intro*/
   #week {
     width: 100%;
     margin-top: 97px;
@@ -477,7 +537,6 @@ a:link, a:hover {
     border-radius: 20px 20px 20px 20px;
     width: 100%;
     background: #FAFAFA;
-
   }
   #choose_day:hover ul {
     display: flex;
@@ -500,12 +559,12 @@ a:link, a:hover {
     display: none;
   }
 
+  /*section calendar*/
   .calendar {
     width: 100%;
     flex-direction: column;
     display: flex;
   }
-
   .meal_on_mobile {
     display: inline;
   }
@@ -520,7 +579,7 @@ a:link, a:hover {
     height: auto;
   }
   .small_field_id_calendar {
-    background: #dcdcdc;
+    background: #ececec;
     text-align: left;
   }
   .diet {
@@ -539,11 +598,41 @@ a:link, a:hover {
   }
   #day64, #day67, #day68, #day69, #day70 {
     border-top: 2px solid #dbdbdb;
-    }
+  }
   #day70 {
     border-bottom: 2px solid #dbdbdb;
   }
+  #from_6am_to_6pm_day70 {
+    min-height: 100px;
+    max-height: 300px;
+  }
+  #text_rotate {
+    transform: rotate(0deg);
+    text-align: center;
+  }
+  #text_rotate h1 {
+    position: static !important;
+  }
+  .happy {
+    top: 0px;
+    border-radius: 50%;
+    background: #ffff00;
+    animation: happy_animation 15s infinite;
+  }
+
+  /*section advertisment*/
   #advertisment {
+    flex-direction: column;
+  }
+  .offert {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .offert_line img {
     display: none;
+  }
+  .offert_line:before {
+    content: url("../img/border_bottom_in_calendar.png");
   }
 }
