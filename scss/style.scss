@@ -84,7 +84,7 @@ header {
   padding: 0px auto 20px 100px;
   height: 81px;
   width: 100%;
-  background: #fff url("../img/line_under_header.png") center no-repeat;
+  background: #fff url("../img/line_under_header.svg") center no-repeat;
   position: relative;
 }
 
@@ -106,12 +106,20 @@ header ul {
   padding: 0px;
   max-width: 100px;
   font-weight: bold;
-  color: $menu-font-color;
 }
 
 #menu li.current_page {
   margin-left: 25px;
   position: relative;
+}
+
+header a, header a:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.current_page a, .current_page a:hover {
+  color: $menu-font-color;
 }
 
 #menu li.current_page div img {
@@ -129,6 +137,7 @@ header ul {
 #user span {
   margin: 30px 5px 30px 0;
   float: left;
+  font-weight: 500;
 }
 
 #chech_grey {
@@ -195,10 +204,6 @@ header ul {
 }
 
 /*div weeek*/
-#week div {
-  height: 44px;
-  max-height: 44px;
-}
 
 #intro div.container {
   width: 1024px;
@@ -207,17 +212,30 @@ header ul {
 
 .border_arrow {
   width: 26px;
-  padding-right: 20px;
-  margin-top: 20px;
-  background: url("../img/border_arrow.png") no-repeat center;
-}
-
-.border_arrow:first-child {
-  margin-left: 30px;
+  background: url("../img/border_arrow.svg") no-repeat center;
 }
 
 #week h1 {
   color: $menu-font-color;
+}
+
+/*slider*/
+.slider {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.slider li {
+  display: none;
+}
+
+li.showWeek {
+  display: flex;
+}
+
+li.hideWeek {
+  display: none;
 }
 
 /*div protein_options*/
@@ -231,6 +249,8 @@ div #protein_options {
 
 #protein_images img {
   padding-left: 15px;
+  height: 44px;
+  width: 44px;
 }
 
 #protein_options div:first-child {
@@ -246,9 +266,8 @@ div #protein_options {
 }
 
 .cross-line {
-  background: url("../img/cross_line.png") center no-repeat;
-  background-position: 100% 20%;
-  background-size: 100% 150%;
+  background: url("../img/cross_line.svg") center no-repeat;
+  background-position: 100% 50%;
 }
 
 /*section calendar*/
@@ -314,11 +333,8 @@ div.wave_background.which_day {
 }
 
 .wave_background {
-  background: #e3e3e3 url("../img/background_wave.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: #e3e3e3 url("../img/background_wave.png") repeat;
+
 }
 
 .big_field_in_calendar {
@@ -375,8 +391,13 @@ div.wave_background.big_field_in_calendar {
 }
 
 #print {
+  cursor: pointer;
   height: 100px;
   line-height: 100px;
+}
+
+#print:hover {
+  background: rgba(128, 128, 128, 0.28);
 }
 
 #day65 {
@@ -461,7 +482,7 @@ img.check_in_round {
 
 }
 
-a:link, a:hover {
+a, a:link, a:hover {
   color: $main-font-color;
   text-decoration: none;
   font-weight: 600;

@@ -13,21 +13,23 @@
 
 <header>
     <div class="container">
-        <img src="img/line_next_to_menu.png" alt="Line" id="line_next_to_menu">
+        <img src="img/line_next_to_menu.svg" alt="Line" id="line_next_to_menu">
         <ul id="menu">
             <li class="current_page">
-                <span>Dashboard</span>
-                <div>
-                    <img src="img/dashboard_line.png" alt="Underline">
-                </div>
+                <a>
+                    <span>Dashboard</span>
+                    <div>
+                        <img src="img/line_active.svg" alt="Underline">
+                    </div>
+                </a>
             </li>
-            <li>Recipes</li>
-            <li>Challenge</li>
+            <li><a>Recipes</a></li>
+            <li><a>Challenge</a></li>
         </ul>
         <div id="user">
-            <img src="img/photo.png" alt="Photo" id="photo">
+            <img src="img/photo.svg" alt="Photo" id="photo">
             <span>Olivia Wilde</span>
-            <img src="img/check_grey.png" alt="Check" id="chech_grey">
+            <a><img src="img/check_grey.png" alt="Check" id="chech_grey"></a>
         </div>
     </div>
 </header>
@@ -90,17 +92,26 @@
                 </div>
             </div>
             <div class="col-md-4" id="week">
-                <div class="row text-center">
-                    <div class="col-md-3 border_arrow">
-                        <img src="img/arrow_left.png" alt="Arrow left">
-                    </div>
-                    <div class="col-xs-6">
-                        <h1 id="current_week">Week 7</h1>
-                    </div>
-                    <div class="col-md-3 border_arrow">
-                        <img src="img/arrow_right.png" alt="Arrow right">
-                    </div>
+                <div class="slider">
+                    <button class="prev border_arrow"><img src="img/arrow_left.svg" alt="Arrow left"></button>
+                    <ul>
+                        <li><h1 class="current_week">Week 1</h1></li>
+                        <li><h1 class="current_week">Week 2</h1></li>
+                        <li><h1 class="current_week">Week 3</h1></li>
+                        <li><h1 class="current_week">Week 4</h1></li>
+                        <li><h1 class="current_week">Week 5</h1></li>
+                        <li><h1 class="current_week">Week 6</h1></li>
+                        <li><h1 class="current_week">Week 7</h1></li>
+                        <li><h1 class="current_week">Week 8</h1></li>
+                        <li><h1 class="current_week">Week 9</h1></li>
+                        <li><h1 class="current_week">Week 10</h1></li>
+                        <li><h1 class="current_week">Week 11</h1></li>
+                        <li><h1 class="current_week">Week 12</h1></li>
+                    </ul>
+                    <button class="next border_arrow"><img src="img/arrow_right.svg" alt="Arrow right"></button>
                 </div>
+
+
                 <nav id="choose_day">
                     <a href="#" id="menu-icon"></a>
                     <ul>
@@ -117,11 +128,11 @@
             <div class="col-md-4" id="protein_options">
                 <div><span>Select your protein options</span></div>
                 <div id="protein_images">
-                    <img src="img/protein_options/bruccoli.png" alt="Bruccoli">
-                    <img src="img/protein_options/cheese.png" alt="Cheese">
-                    <img src="img/protein_options/meat.png" alt="Meat">
-                    <img src="img/protein_options/fish.png" alt="Fish" class="cross-line">
-                    <img src="img/protein_options/chicken.png" alt="Chicken" class="cross-line">
+                    <img src="img/protein_options/broccoli.svg" alt="Bruccoli">
+                    <img src="img/protein_options/cheese.svg" alt="Cheese">
+                    <img src="img/protein_options/meat.svg" alt="Meat">
+                    <img src="img/protein_options/fish.svg" alt="Fish" class="cross-line">
+                    <img src="img/protein_options/chicken.svg" alt="Chicken" class="cross-line">
                 </div>
             </div>
         </div>
@@ -167,7 +178,7 @@
             </div>
             <div id="workout" class="wave_background small_field_id_calendar">
                 <span>Workout</span>
-                <img src="img/small_arrow.png" alt="Small arrow">
+                <img src="img/small_arrow.svg" alt="Small arrow">
             </div>
         </div>
         <div class="calendar" id="day64">
@@ -180,7 +191,7 @@
             <div id="6am_day64" class="big_field_in_calendar">
                 <span class="meal_on_mobile hour">6:00 PM</span>
                 <span class="meal">Bod•ē Shake</span>
-                <img src="img/check_in_round.png" class="check_in_round" alt="Check">
+                <img src="img/check_in_round.svg" class="check_in_round" alt="Check">
                 <img src="img/shake.png" class="shake" alt="Shake">
             </div>
             <div class="border_in_calendar">
@@ -189,7 +200,7 @@
             <div id="9am_day64" class="big_field_in_calendar">
                 <span class="meal_on_mobile hour">9:00 PM</span>
                 <span class="meal">Ham and <br class="new_line"> Swiss Roll Ups</span>
-                <img src="img/check_in_round.png" class="check_in_round" alt="Check">
+                <img src="img/check_in_round.svg" class="check_in_round" alt="Check">
             </div>
             <div class="border_in_calendar">
                 <img src="img/border_bottom_in_calendar.png" alt="Border">
@@ -197,7 +208,7 @@
             <div id="12am_day64" class="big_field_in_calendar">
                 <span class="meal_on_mobile hour">12:00 PM</span>
                 <span class="meal">Turkey Melt</span>
-                <img src="img/check_in_round.png" class="check_in_round" alt="Check">
+                <img src="img/check_in_round.svg" class="check_in_round" alt="Check">
             </div>
             <div class="border_in_calendar">
                 <img src="img/border_bottom_in_calendar.png" alt="Border">
@@ -205,7 +216,7 @@
             <div id="3pm_day64" class="big_field_in_calendar">
                 <span class="meal_on_mobile hour">3:00 AM</span>
                 <span class="meal">Bod•ē Burn <br class="new_line"> with Mozzarella and Tomato Spices</span>
-                <img src="img/check_in_round.png" class="check_in_round" alt="Check">
+                <img src="img/check_in_round.svg" class="check_in_round" alt="Check">
             </div>
             <div class="border_in_calendar">
                 <img src="img/border_bottom_in_calendar.png" alt="Border">
@@ -223,10 +234,10 @@
             </div>
             <div class="wave_background small_field_id_calendar">
                 <span class="meal_on_mobile hour">Workouts
-                <img src="img/small_arrow.png" alt="Small arrow">
+                <img src="img/small_arrow.svg" alt="Small arrow">
                 </span>
-                <img src="img/barbell_orange.png" class="barbell" alt="Barbell">
-                <img src="img/check_orange.png" class="check" alt="Check">
+                <img src="img/barbell_orange.svg" class="barbell" alt="Barbell">
+                <img src="img/check_orange.svg" class="check" alt="Check">
             </div>
         </div>
         <div class="calendar current_day" id="day65">
@@ -278,10 +289,10 @@
             </div>
             <div class="wave_background small_field_id_calendar">
                 <span class="meal_on_mobile hour">Workouts
-                <img src="img/small_arrow.png" alt="Small arrow">
+                <img src="img/small_arrow.svg" alt="Small arrow">
                 </span>
-                <img src="img/barbell_orange.png" class="barbell" alt="Barbell">
-                <img src="img/check_orange.png" class="check" alt="Check">
+                <img src="img/barbell_orange.svg" class="barbell" alt="Barbell">
+                <img src="img/check_orange.svg" class="check" alt="Check">
             </div>
         </div>
         <div class="calendar" id="day66">
@@ -334,9 +345,9 @@
             </div>
             <div class="wave_background small_field_id_calendar">
                 <span class="meal_on_mobile hour">Workouts
-                <img src="img/small_arrow.png" alt="Small arrow">
+                <img src="img/small_arrow.svg" alt="Small arrow">
                 </span>
-                <img src="img/barbell_grey.png" class="barbell" alt="Barbell">
+                <img src="img/barbell_grey.svg" class="barbell" alt="Barbell">
             </div>
         </div>
         <div class="calendar" id="day67">
@@ -388,9 +399,9 @@
             </div>
             <div class="wave_background small_field_id_calendar">
                 <span class="meal_on_mobile hour">Workouts
-                <img src="img/small_arrow.png" alt="Small arrow">
+                <img src="img/small_arrow.svg" alt="Small arrow">
                 </span>
-                <img src="img/barbell_grey.png" class="barbell" alt="Barbell">
+                <img src="img/barbell_grey.svg" class="barbell" alt="Barbell">
             </div>
         </div>
         <div class="calendar" id="day68">
@@ -443,9 +454,9 @@
             </div>
             <div class="wave_background small_field_id_calendar">
                 <span class="meal_on_mobile hour">Workouts
-                <img src="img/small_arrow.png" alt="Small arrow">
+                <img src="img/small_arrow.svg" alt="Small arrow">
                 </span>
-                <img src="img/barbell_grey.png" class="barbell" alt="Barbell">
+                <img src="img/barbell_grey.svg" class="barbell" alt="Barbell">
             </div>
         </div>
         <div class="calendar" id="day69">
@@ -498,9 +509,9 @@
             </div>
             <div class="wave_background small_field_id_calendar">
                 <span class="meal_on_mobile hour">Workouts
-                <img src="img/small_arrow.png" alt="Small arrow">
+                <img src="img/small_arrow.svg" alt="Small arrow">
                 </span>
-                <img src="img/barbell_grey.png" class="barbell" alt="Barbell">
+                <img src="img/barbell_grey.svg" class="barbell" alt="Barbell">
             </div>
         </div>
         <div class="calendar" id="day70">
@@ -512,10 +523,10 @@
             </div>
             <div id="from_6am_to_6pm_day70">
                 <div id="text_rotate"><h1>Guilt-free Day</h1></div>
-                <img src="img/happy.png" alt="Happy" class="happy">
+                <img src="img/happy.svg" alt="Happy" class="happy">
             </div>
-            <div class="wave_background text-center" id="print">
-                <img src="img/print.png" alt="Print">
+            <div class="wave_background text-center print" id="print">
+                <img src="img/print.svg" alt="Print">
                 <span>Print</span>
             </div>
         </div>
@@ -528,7 +539,7 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur consequuntur.</p>
         <a href="#" class="button">
             <span>Buy now</span>
-            <img src="img/arrow_right.png" alt="Arrow right">
+            <img src="img/arrow_adverisment.svg" alt="Arrow right">
         </a>
     </div>
     <div class="offert_line">
@@ -538,14 +549,14 @@
         <h2>Bod•ē Trainer in your pocket</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur consequuntur.</p>
         <a href="#" class="button">
-            <img src="img/ios.png" alt="iOS">
+            <img src="img/ios.svg" alt="iOS">
             <span>iOS</span>
-            <img src="img/arrow_right.png" alt="Arrow right">
+            <img src="img/arrow_adverisment.svg" alt="Arrow right">
         </a>
         <a href="#" class="button">
-            <img src="img/android.png" alt="Android">
+            <img src="img/android.svg" alt="Android">
             <span>Android</span>
-            <img src="img/arrow_right.png" alt="Arrow right">
+            <img src="img/arrow_adverisment.svg" alt="Arrow right">
         </a>
     </div>
     <div class="offert_line">
@@ -556,11 +567,13 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur consequuntur.</p>
         <a href="#" class="button">
             <span>Read FAQs</span>
-            <img src="img/arrow_right.png" alt="Arrow right">
+            <img src="img/arrow_adverisment.svg" alt="Arrow right">
         </a>
     </div>
 </section>
 
+
+<script src="js/script.js" type="text/javascript"></script>
 </body>
 
 </html>
