@@ -11172,11 +11172,13 @@ button.close {
 }
 
 /*font HelveticaNeueLStd Roman*/
-@keyframes happy_animation {
+@-webkit-keyframes happy_animation {
   0% {
     background-color: #ffa625;
     left: 0%;
     top: 0%;
+    ms-transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
     transform: scale(1) rotate(0deg);
   }
 
@@ -11184,6 +11186,8 @@ button.close {
     background-color: #ccff41;
     left: 40%;
     top: 25%;
+    -ms-transform: scale(1.3) rotate(180deg);
+    -webkit-transform: scale(1.3) rotate(180deg);
     transform: scale(1.3) rotate(180deg);
   }
 
@@ -11191,6 +11195,8 @@ button.close {
     background-color: #64ff3d;
     left: 35%;
     top: 35%;
+    -ms-transform: scale(1.6) rotate(360deg);
+    -webkit-transform: scale(1.6) rotate(360deg);
     transform: scale(1.6) rotate(360deg);
   }
 
@@ -11198,6 +11204,8 @@ button.close {
     background-color: #0e8079;
     left: 25%;
     top: 40%;
+    -ms-transform: scale(1.9) rotate(180deg);
+    -webkit-transform: scale(1.9) rotate(180deg);
     transform: scale(1.9) rotate(180deg);
   }
 
@@ -11205,6 +11213,8 @@ button.close {
     background-color: #ffff00;
     left: 0%;
     top: 0%;
+    -ms-transform: scale(2.2) rotate(0deg);
+    -webkit-transform: scale(2.2) rotate(0deg);
     transform: scale(2.2) rotate(0deg);
   }
 
@@ -11212,6 +11222,8 @@ button.close {
     background-color: #ccff41;
     left: -40%;
     top: 25%;
+    -ms-transform: scale(1.9) rotate(180deg);
+    -webkit-transform: scale(1.9) rotate(180deg);
     transform: scale(1.9) rotate(180deg);
   }
 
@@ -11219,6 +11231,8 @@ button.close {
     background-color: #64ff3d;
     left: -35%;
     top: 35%;
+    -ms-transform: scale(1.6) rotate(360deg);
+    -webkit-transform: scale(1.6) rotate(360deg);
     transform: scale(1.6) rotate(360deg);
   }
 
@@ -11226,6 +11240,8 @@ button.close {
     background-color: #0e8079;
     left: -25%;
     top: 40%;
+    -ms-transform: scale(1.3) rotate(180deg);
+    -webkit-transform: scale(1.3) rotate(180deg);
     transform: scale(1.3) rotate(180deg);
   }
 
@@ -11233,6 +11249,91 @@ button.close {
     background-color: #ffff00;
     left: 0%;
     top: 0%;
+    -ms-transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes happy_animation {
+  0% {
+    background-color: #ffa625;
+    left: 0%;
+    top: 0%;
+    ms-transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+  }
+
+  12.5% {
+    background-color: #ccff41;
+    left: 40%;
+    top: 25%;
+    -ms-transform: scale(1.3) rotate(180deg);
+    -webkit-transform: scale(1.3) rotate(180deg);
+    transform: scale(1.3) rotate(180deg);
+  }
+
+  25% {
+    background-color: #64ff3d;
+    left: 35%;
+    top: 35%;
+    -ms-transform: scale(1.6) rotate(360deg);
+    -webkit-transform: scale(1.6) rotate(360deg);
+    transform: scale(1.6) rotate(360deg);
+  }
+
+  37.5% {
+    background-color: #0e8079;
+    left: 25%;
+    top: 40%;
+    -ms-transform: scale(1.9) rotate(180deg);
+    -webkit-transform: scale(1.9) rotate(180deg);
+    transform: scale(1.9) rotate(180deg);
+  }
+
+  50% {
+    background-color: #ffff00;
+    left: 0%;
+    top: 0%;
+    -ms-transform: scale(2.2) rotate(0deg);
+    -webkit-transform: scale(2.2) rotate(0deg);
+    transform: scale(2.2) rotate(0deg);
+  }
+
+  62.5% {
+    background-color: #ccff41;
+    left: -40%;
+    top: 25%;
+    -ms-transform: scale(1.9) rotate(180deg);
+    -webkit-transform: scale(1.9) rotate(180deg);
+    transform: scale(1.9) rotate(180deg);
+  }
+
+  75% {
+    background-color: #64ff3d;
+    left: -35%;
+    top: 35%;
+    -ms-transform: scale(1.6) rotate(360deg);
+    -webkit-transform: scale(1.6) rotate(360deg);
+    transform: scale(1.6) rotate(360deg);
+  }
+
+  87.5% {
+    background-color: #0e8079;
+    left: -25%;
+    top: 40%;
+    -ms-transform: scale(1.3) rotate(180deg);
+    -webkit-transform: scale(1.3) rotate(180deg);
+    transform: scale(1.3) rotate(180deg);
+  }
+
+  100% {
+    background-color: #ffff00;
+    left: 0%;
+    top: 0%;
+    -ms-transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
     transform: scale(1) rotate(0deg);
   }
 }
@@ -11392,6 +11493,10 @@ header a, header a:hover {
 
 /*slider*/
 .slider {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -11402,6 +11507,10 @@ header a, header a:hover {
 }
 
 li.showWeek {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
@@ -11656,19 +11765,72 @@ a, a:link, a:hover {
 }
 
 /*media queries*/
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 1023px) {
   body {
-    width: 100%;
-    max-width: 360px;
+    max-width: 100%;
   }
 
   /*header*/
+  #user {
+    position: static;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  /*section intro*/
+  #intro div.container {
+    width: 100%;
+  }
+
+  #twelve_circles {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  /*section calendar*/
+  .shake {
+    height: 50px;
+  }
+
+  .meal {
+    font-size: 1.35vw;
+  }
+
+  .check_in_round {
+    right: 4px;
+  }
+
+  /*section advertisment*/
+  #advertisment {
+    margin-top: 20px;
+    align-items: flex-start;
+  }
+
+  .button {
+    margin-bottom: 10px;
+  }
+
+  .offert:first-child {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 767px) {
+  /*header*/
   header .container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
-    height: 200px;
     background: #fff;
   }
 
@@ -11677,6 +11839,10 @@ a, a:link, a:hover {
   }
 
   #menu {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: column;
   }
@@ -11695,13 +11861,17 @@ a, a:link, a:hover {
   }
 
   /*section intro*/
+  #intro {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+
   #week {
     width: 100%;
     margin-top: 97px;
-  }
-
-  .container {
-    max-width: 360px;
   }
 
   #week div.row {
@@ -11715,6 +11885,10 @@ a, a:link, a:hover {
   }
 
   #choose_day {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     justify-content: center;
     margin-top: 20px;
@@ -11739,6 +11913,10 @@ a, a:link, a:hover {
   }
 
   #choose_day:hover ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -11767,6 +11945,10 @@ a, a:link, a:hover {
   .calendar {
     width: 100%;
     flex-direction: column;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
   }
 
@@ -11842,6 +12024,7 @@ a, a:link, a:hover {
   /*section advertisment*/
   #advertisment {
     flex-direction: column;
+    margin-top: 15px;
   }
 
   .offert {
