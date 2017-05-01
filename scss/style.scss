@@ -262,39 +262,45 @@ header a, header a:hover {
   font-weight: 600;
 }
 
-#twelve_circles {
-  width: 220px;
-  position: relative;
-  left: 15px;
+.twelve_circles {
+  width: 250px;
+}
+
+.circle {
+  display: inline-block;
+  text-align: center;
+  margin-right: 4px;
+}
+
+.green_circle, .grey_circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 .green_circle {
-  background: url("../img/green_line.png") no-repeat;
-  background-position: 0px 11px;
+  background-color: #b3c300;
 }
 
 .grey_circle {
-  background: url("../img/grey_line.png") no-repeat;
-  background-position: 0px 11px;
+  background-color: #dcdcdc;
 }
 
-.grey_circle:last-child {
-  background: none;
+.grey_and_white_circle {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#grey_circle_week7 {
-  position: relative;
-}
-
-#white_circle_week7 {
-  position: absolute;
-  z-index: 1;
-  left: 2px;
-  top: 9px;
-}
-
-#twelve_circles .green_circle, #twelve_circles .grey_circle {
-  padding: 0px;
+.white_circle {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
 }
 
 /*div weeek*/
